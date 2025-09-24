@@ -7,10 +7,12 @@
     "build": "next build",
     "build_pm2": "next build && cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/ && cp -r ./docs/Deploy.md ./.next/standalone/",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "@headlessui/react": "^2.2.0",
+    "@opennextjs/cloudflare": "^1.8.5",
     "clsx": "^2.1.1",
     "gsap": "^3.12.7",
     "motion": "^12.4.7",
