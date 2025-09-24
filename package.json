@@ -1,0 +1,35 @@
+{
+  "name": "xtalk-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "build_pm2": "next build && cp -r public .next/standalone/ && cp -r .next/static .next/standalone/.next/ && cp -r ./docs/Deploy.md ./.next/standalone/",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "clsx": "^2.1.1",
+    "gsap": "^3.12.7",
+    "motion": "^12.4.7",
+    "next": "15.1.7",
+    "next-intl": "^3.26.5",
+    "rc-select": "^14.16.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.7",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac"
+}
